@@ -1,0 +1,18 @@
+.header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: $spacing-unit;
+  
+    .navbar-brand {
+      font-weight: bold;
+    }
+  
+    .nav-link {
+      color: #fff;
+  
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+  

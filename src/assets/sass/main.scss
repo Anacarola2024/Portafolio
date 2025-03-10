@@ -1,0 +1,14 @@
+// Importa archivos de estilos abstractos
+@import 'abstracts/variables' ;
+@import 'abstracts/mixins' ;
+
+// Importa archivos base
+@import 'base/reset' ;
+@import 'base/typography' ;
+
+// Importa estilos de layout y componentes
+@import 'layout/header' ;
+@import 'components/button' ;
+
+// Importa estilos específicos de páginas
+@import'pages/home' ;

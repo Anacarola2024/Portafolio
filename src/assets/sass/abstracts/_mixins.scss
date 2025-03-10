@@ -1,0 +1,17 @@
+// Mixin para bordes redondeados
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+  }
+  
+  // Mixin para el centro de un elemento
+  @mixin center($width, $height) {
+    width: $width;
+    height: $height;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

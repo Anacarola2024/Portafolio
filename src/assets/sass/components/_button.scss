@@ -1,0 +1,13 @@
+.button {
+    background-color: $primary-color;
+    color: #fff;
+    padding: $spacing-unit;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+  
