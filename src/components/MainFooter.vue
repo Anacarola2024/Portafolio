@@ -19,23 +19,27 @@ export default {
 
 <style scoped lang="scss">
 footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #212529; /* Color oscuro */
+  color: white;
+
   .social-icons {
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
 
-  .social-icons a {
-    transition: color 0.3s ease;
-  }
+  /* Ajuste en móviles */
+  @media (max-width: 768px) {
+    padding: 15px 0;
+    font-size: 0.9rem;
 
-  .social-icons a:hover {
-    color: white;
+    .social-icons {
+      font-size: 1.2rem;
+    }
   }
-  .social-icons i {
-    margin: 0 15px;
-  }
-  .elemento-anterior {
-  margin-bottom: 0;
-}
-
 }
 </style>
