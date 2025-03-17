@@ -73,7 +73,7 @@
   }
   
   .container {
-    max-width: 900px;
+    max-width: 62,5%;
     margin: 0 auto;
     text-align: center;
 

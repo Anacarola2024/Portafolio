@@ -26,12 +26,13 @@
   <style scoped>
   .contact-view {
     padding: 60px 0;
-    background-color: #ffffff;
+    background-color: #ffffff ;
     background-image: url('@/assets/img/Fondo de Pantalla Gradiente Rosa y Celeste Pastel.png');
   }
   
   .container {
-    max-width: 900px;
+    max-width: 50%;
+    height : auto;
     margin: 0 auto;
     text-align: center;
   }

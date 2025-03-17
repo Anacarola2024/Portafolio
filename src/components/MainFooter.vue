@@ -33,5 +33,9 @@ footer {
   .social-icons i {
     margin: 0 15px;
   }
+  .elemento-anterior {
+  margin-bottom: 0;
+}
+
 }
 </style>

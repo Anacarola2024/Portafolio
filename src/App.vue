@@ -25,6 +25,35 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Asegura que el html y body ocupen el 100% de la altura */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Estilos para el contenedor principal */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 200vh; /* Ocupa al menos el 100% de la altura de la ventana */
+}
+
+/* El main se expande para ocupar el espacio disponible */
+main {
+  flex: 1;
+}
+
+
+
+main {
+  flex: 1;
+}
+
 @import '@/assets/sass/main'; // Si tienes un archivo SASS global
 
 body {
