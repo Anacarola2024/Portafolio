@@ -24,46 +24,31 @@
   </script>
   
   <style scoped>
-  .contact-view {
-    padding: 60px 0;
-    background-color: #ffffff ;
-    background-image: url('@/assets/img/Fondo de Pantalla Gradiente Rosa y Celeste Pastel.png');
-  }
-  
+.contact-view {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  background-image: url('@/assets/img/Fondo de Pantalla Gradiente Rosa y Celeste Pastel.png');
+  background-size: cover; /* Para que la imagen cubra todo */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 90%; /* Cambia de 50% a 90% para mejorar en móviles */
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
   .container {
-    max-width: 50%;
-    height : auto;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 60%; /* Un poco más grande en pantallas medianas */
   }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 50%; /* Solo en pantallas grandes */
   }
-  
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  </style>
-  
+}
+</style>

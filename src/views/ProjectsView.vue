@@ -66,51 +66,85 @@
   
   <style scoped>
   .projects-view {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-    background-image: url('@/assets/img/Fondo de Pantalla Abstracto Formas Orgánicas Rosado.png');
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  background-image: url('@/assets/img/Fondo de Pantalla Abstracto Formas Orgánicas Rosado.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  }
-  
-  .container {
-    max-width: 62,5%;
-    margin: 0 auto;
-    text-align: center;
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) {
   .project-list {
-    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+  .project-list {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
   }
-  
-  .project-card {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .project-card p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  .project-card .btn {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project-card .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-card .btn:hover {
+  background-color: #138496;
+}
+
   </style>
   
   
